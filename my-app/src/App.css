@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+.root {
+  font-family: 'PT Sans', sans-serif;
+}
+
+html, body, #root{
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  background-color: #0b0322;
+  height: 100%;
+}
+
+
+
+
+.draggable-box {
+  background: #1f354b;
+  border-radius: 5px;
+  border: solid;
+  border-width: 2px;
+  border-color: #eedf1f;
+  cursor: grab;
+  color: white;
+  user-select: none;
+  z-index: 1;
+}
+
+.draggable-box-close-button {
+  float: right;
+  border: none;
+  font-size: 25px;
+  background-color: transparent;
+  color: white;
+  transform: rotate(45deg);
+}
+.draggable-box-close-button:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.button-yellow-hover {
+  background-color: #144272;
+  border-radius: 1rem;
+  border-width: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 5px
+}
+.button-yellow-hover:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
+.draggable-box-header {
+  padding: 2px;
+}
+
+.box-editor {
+  position: fixed;
+  min-height: 200px;
+  min-height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #212529;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.editor-box-title-field {
+  color: white;
+  background-color: #495057;
+  border-radius: 5px;
+  border-width: 0px;
+  margin: 5px;
+  padding: 3px;
+}
+
+svg {
+  z-index: 0;
+}
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.draggable-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: move;
+  border: 1px solid black;
+}
+
+.drop-zone {
+  padding: 10px;
+  border: 1px dashed black;
+}
