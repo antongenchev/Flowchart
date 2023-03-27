@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import '../App.css';
+import api from '../api';
 
 const DraggableBox = ({id, content, isCreatingConnection, onClick, onConnectDown, onConnectUp, onEdit, onClose}) => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
